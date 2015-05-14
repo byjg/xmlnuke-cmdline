@@ -2,7 +2,7 @@
 	"name": "byjg/xmlnuke-cmdline",
 	"description": "Run XMLNuke modules and classes in command line as batches and daemon/service",
 	"type": "project",
-	"version": "1.0.0",
+	"version": "1.0.0-dev",
 	"keywords": ["api", "framework", "xml", "json", "xsl", "xmlnuke", "shell", "command line"],
 	"homepage": "http://xmlnuke.com",
 	"license": "GPL",
@@ -25,7 +25,7 @@
 		"ext-dom": "*",
 		"ext-xml": "*",
 		"ext-xsl": "*",
-		"byjg/xmlnuke": "dev-master"
+		"byjg/xmlnuke": "dev-develop"
 	},
 	"suggest": {
 		"ext-curl": "*",
