@@ -76,7 +76,7 @@ class Service
 This method must return `true` to continue the service or `false` to stop it. To run this daemon:
 
 ```
-$ sudo runxmlnuke.php daemon service=Lesson1.Classes.Service &
+sudo runxmlnuke.php daemon service=Lesson1.Classes.Service &
 ```
 
 The service will run silently, but will create TWO log files:
