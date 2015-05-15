@@ -13,7 +13,7 @@ foreach ($argv as $pair)
 	}
 }
 $_SERVER['QUERY_STRING'] = implode('&', $argv);
-$_SERVER['REQUEST_URI'] = 'xmlnuke.cmd.php';
+$_SERVER['REQUEST_URI'] = 'daemon.cmd.php';
 
 $svcname = (array_key_exists("service", $_REQUEST) ? $_REQUEST['service'] : '');
 $baseLogPath = "/var/log/xmlnuke.daemon";
