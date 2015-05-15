@@ -118,6 +118,17 @@ or
 service sample stop
 ```
 
+## Runinng REST Class in Command Line
+
+XMLNuke REST class inherit from BaseService. These classes understanding the http methods GET, POST, PUT and DELETE and execute the proper method. The parameters action and id are considered also. 
+
+Below a typical REST call in cmdLine:
+
+```
+runxmlnuke.php xmlnuke <FOLDER_YOUR_APP> module=Lesson1.Classes.Service REQUEST_METHOD=GET id=1 action=user
+```
+
+
 # Putting all together
 
 * **Service**: https://github.com/byjg/xmlnuke-lesson1/blob/master/lib/Lesson1/Classes/Service.class.php
