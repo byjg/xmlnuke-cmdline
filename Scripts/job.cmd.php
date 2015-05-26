@@ -20,5 +20,14 @@ require_once("xmlnuke.inc.php");
 
 $service = new $svcname();
 
-$continue = $service->execute();
+try
+{
+	$continue = $service->execute();
+}
+catch (Exception $ex)
+{
+	echo "Error: " . $ex->getMessage() . "\n";
+	echo "Backtrace:\n";
+	print_r($ex->getTrace());
+}
 
