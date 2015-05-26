@@ -18,6 +18,14 @@ $_SERVER['REQUEST_URI'] = 'job.cmd.php';
 require_once("xmlnuke.inc.php");
 #############################################
 
+$svcname = (array_key_exists("service", $_REQUEST) ? $_REQUEST['service'] : '');
+if ($svcname == "")
+{
+	die("Error: Paramenter 'service' is required and must contain a full namespace for the class\n");
+}
+
+$svcname = str_replace('.', '\\', $svcname);
+
 $service = new $svcname();
 
 try
