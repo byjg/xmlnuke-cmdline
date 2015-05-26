@@ -36,6 +36,11 @@ catch (Exception $ex)
 {
 	echo "Error: " . $ex->getMessage() . "\n";
 	echo "Backtrace:\n";
-	print_r($ex->getTrace());
+	$backTrace = $ex->getTrace();
+	$qty = 0;
+	foreach ($backTrace as $trace)
+	{
+		echo "[" . (count($backTrace) - $qty++) . "] " . $trace['file'] . ":" . $trace['line'] . "\n";
+	}
 }
 
